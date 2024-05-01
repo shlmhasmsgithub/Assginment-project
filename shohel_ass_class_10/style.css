@@ -1,0 +1,905 @@
+@font-face {
+    font-family: open-sans-font;
+    src: url(fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+    src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: open-sans-font;
+    background-color: #ffffff;
+    color: #636363;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.row > div {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.col-10 {
+    width: 10%;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-33 {
+    width: 33.33%;
+}
+
+.col-35 {
+    width: 35%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-65 {
+    width: 65%;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+.col-75 {
+    width: 70%;
+}
+
+.col-80 {
+    width: 80%;
+}
+
+.col-90 {
+    width: 90%;
+}
+
+/*===== HEADER AREA =====*/
+.header-area {
+    background-color: #f3f3f3;
+    padding: 15px 0;
+}
+
+.header-area .space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-area .header-left span {
+    display: inline-block;
+    padding: 0;
+}
+
+.header-area .header-left span,
+.header-area .header-right a {
+    color: #959595;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 25px;
+    border-right: 2px solid #959595;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.header-area .header-left span:hover {
+    color: #c92f2f;
+}
+
+.header-area .header-left span i {
+    color: #c92f2f;
+    font-size: 12px;
+    padding-right: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.header-area .header-left a {
+    font-size: 14px;
+    color: #959595;
+    padding: 0 10px;
+    font-weight: 500;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.header-area .header-left a:hover {
+    color: #c92f2f;
+}
+
+.header-area .header-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-area .header-right a {
+    padding-right: 0;
+    border-right: 0;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: 0.2s;
+}
+
+.header-area .header-right a:hover {
+    color: #c92f2f;
+}
+
+.header-area .header-right a i {
+    font-size: 14px;
+    padding-right: 2px;
+    color: #c92f2f;
+}
+/*===== HEADER AREA =====*/
+
+/*===== NAVBAR AREA =====*/
+
+.navbar-area {
+    padding: 25px 0;
+    box-shadow: 0 3px 6px #d6d5d5;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: #fff;
+}
+
+.navbar-area .menu-area ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar-area .menu-area ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 14px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #232323;
+    transition: 0.2s;
+}
+
+.navbar-area ul li a:hover {
+    color: #c92f2f;
+}
+
+.navbar-area .menu-area ul li .last-child {
+    padding: 10px 30px;
+    background-color: #c92f2f;
+    border-radius: 4px;
+    margin-right: 10px;
+    color: #fff;
+    margin-left: 15px;
+    transition: 0.2s;
+}
+
+.navbar-area .menu-area ul li .last-child:hover {
+    background-color: #232323;
+}
+
+/*===== SUB MENU DESIGN AREA =====*/
+.navbar-area .menu-area ul li {
+    position: relative;
+}
+
+.navbar-area .menu-area ul li:hover ul {
+    display: block;
+}
+
+.navbar-area .menu-area ul ul {
+    display: initial;
+    position: absolute;
+    background-color: #c92f2f;
+    top: 20px;
+    left: 50%;
+    border-radius: 6px;
+    display: none;
+}
+
+.navbar-area .menu-area ul ul:hover {
+    background-color: #e43131;
+    color: #120606;
+}
+
+.navbar-area .menu-area ul ul li {
+    width: 140px;
+}
+
+.navbar-area .menu-area ul ul li a {
+    width: 100px;
+    display: block;
+    padding: 0;
+    color: #fff;
+    padding: 15px 0;
+    transition: 0.4s;
+}
+
+.navbar-area .menu-area ul ul li a i {
+    padding-right: 5px;
+}
+
+.navbar-area .menu-area ul ul li a:hover {
+    color: #3f2121;
+    padding-left: 2px;
+}
+/*===== SUB MENU DESIGN AREA =====*/
+
+/*===== NAVBAR AREA =====*/
+
+/*===== ABOUT AREA =====*/
+.about-area {
+    padding: 110px 0;
+}
+
+.about-area .about-head-content {
+    text-align: center;
+}
+
+.about-area .about-head-content h2 {
+    color: #1f1f2c;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.about-area .about-head-content p {
+    margin-top: 20px;
+    font-size: 16px;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-area .single-abt-area {
+    margin-top: 50px;
+}
+
+.about-area .single-abt-area img {
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.about-area .single-abt-area h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f1f2c;
+    padding-top: 35px;
+}
+
+.about-area .single-abt-area:hover h4 {
+    color: #c92f2f;
+}
+
+.about-area .single-abt-area p {
+    margin: 20px 0;
+    padding-right: 35px;
+}
+
+.about-area .single-abt-area a {
+    display: inline-block;
+    color: #959595;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.about-area .single-abt-area a:hover {
+    color: #c92f2f;
+    padding-right: 10px;
+}
+
+.about-area .single-abt-area a i {
+    font-size: 11px;
+    transition: 0.5s;
+}
+
+.about-area .single-abt-area a:hover i {
+    padding-left: 5px;
+}
+/*===== ABOUT AREA =====*/
+
+/*===== OVERLAY AREA =====*/
+
+.overlay-area {
+    background-image: url(images/6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 230px 0;
+    margin-bottom: 75px;
+    position: relative;
+}
+
+.overlay-area::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(10, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-area .inner-section {
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-area .inner-section h5 {
+    color: #c92f2f;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.overlay-area .inner-section h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 55px;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+.overlay-area .inner-section a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 32px;
+    background-color: #fff;
+    color: #c92f2f;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.overlay-area .inner-section a:hover {
+    background-color: #c92f2f;
+    color: #fff;
+}
+/*===== OVERLAY AREA =====*/
+
+/*===== SERMONS AREA =====*/
+.sermons-area {
+    margin-bottom: 60px;
+}
+
+.sermons-area .sermons-heading {
+    text-align: center;
+}
+
+.sermons-area .sermons-heading h2 {
+    color: #1f1f2c;
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.sermons-area .sermons-heading p {
+    font-size: 16px;
+    max-width: 670px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sermons-area .single-sermons {
+    margin-top: 55px;
+    position: relative;
+}
+
+.sermons-area .single-sermons .date-box {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 4px 4px 7px #c7c6c6;
+    border: 6px;
+    left: 20px;
+    bottom: 225px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.sermons-area .single-sermons img {
+    border-radius: 6px;
+}
+
+.sermons-area .single-sermons:hover .date-box {
+    color: #fff;
+    background-color: #c92f2f;
+    transform: translateY(-28px);
+    box-shadow: none;
+}
+
+.sermons-area .single-sermons .date-box span {
+    font-size: 36px;
+    color: #000;
+    font-weight: 700;
+}
+
+.sermons-area .single-sermons .date-box small {
+    font-size: 16px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.sermons-area .single-sermons a {
+    margin-top: 40px;
+    display: inline-block;
+    padding-bottom: 18px;
+    padding-right: 15px;
+    color: #636363;
+    transition: 0.2s;
+}
+
+.sermons-area .single-sermons a:hover {
+    color: #c92f2f;
+}
+
+.sermons-area .single-sermons h2 {
+    border-bottom: 1px solid #e4e1e1;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f1f2c;
+}
+
+.sermons-area .single-sermons p {
+    padding: 4.5px 0;
+    color: #959595;
+}
+
+.sermons-area .single-sermons p i {
+    color: #c92f2f;
+    padding-right: 4px;
+}
+
+.sermons-area .single-sermons p em {
+    color: #636363;
+    padding-left: 2px;
+}
+/*===== SERMONS AREA =====*/
+
+/*===== UPCOMING AREA =====*/
+
+.upcoming-area {
+    background-image: url(images/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 110px 0;
+    margin-bottom: 110px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.upcoming-area::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(15, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.upcoming-area .inner-upcoming {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    /* align-items: flex-start; */
+    /* text-align: left; */
+}
+
+.upcoming-area .inner-upcoming h2 {
+    font-size: 36px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    /* text-align: left; */
+}
+
+.upcoming-area .inner-upcoming p {
+    font-size: 16px;
+    /* text-align: left; */
+}
+
+/*===== UPCOMING AREA =====*/
+
+/*===== GELLARY AREA =====*/
+.gellary-area {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 85px;
+}
+
+.gellary-area .single-gellary {
+    width: 20%;
+}
+
+.gellary-area .single-gellary {
+    overflow: hidden;
+}
+
+.gellary-area .single-gellary img {
+    transition: 0.7s;
+}
+
+.gellary-area .single-gellary:hover img {
+    transform: scale(1.5);
+    /* backdrop-filter: blur(40px); */
+}
+/*===== GELLARY AREA =====*/
+
+/*===== PAZINATION AREA =====*/
+
+.pagination-bar {
+    margin-bottom: 70px;
+}
+
+.pagination-bar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    box-shadow: 4px 4px 8px #d1cfcf;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-radius: 30px;
+    padding: 12px 0;
+}
+
+.pagination-bar ul li {
+    margin: 0 5px;
+}
+
+.pagination-bar ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 14px;
+    color: #120606;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.pagination-bar ul li a:hover {
+    color: #c92f2f;
+}
+
+.pagination-bar ul .btn-link {
+    border-radius: 50%;
+}
+
+.pagination-bar ul .btn-link:hover {
+    background-color: #c92f2f;
+    color: #fff;
+}
+
+.pagination-bar ul li a .fa-solid {
+    font-size: 12px;
+}
+
+/*===== PAZINATION AREA =====*/
+
+/*===== LATEST NEWS AREA  =====*/
+.news-area .news-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.news-area .news-heading h2 {
+    color: #1f1f2c;
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+}
+
+.news-area .news-heading P {
+    font-size: 16px;
+}
+
+.news-area {
+    margin-bottom: 100px;
+}
+
+.news-area .single-news-content h2 {
+    color: #1f1f2c;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 35px;
+    padding-bottom: 17px;
+    line-height: 30px;
+}
+
+.news-area .single-news-content {
+    transition: 3s;
+    padding-right: 10px;
+}
+
+.news-area .single-news-content:hover h2 {
+    color: #c92f2f;
+}
+
+.news-area .single-news-content a {
+    color: #959595;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-right: 8px;
+    transition: 0.2s;
+    margin-bottom: 18px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.news-area .single-news-content :nth-child(3) {
+    border-right: 2px solid #dbdada;
+}
+
+.news-area .single-news-content a:hover {
+    color: #c92f2f;
+}
+
+.news-area .single-news-content a i {
+    color: #c92f2f;
+    padding-right: 2px;
+}
+/*===== LATEST NEWS AREA  =====*/
+
+/*===== SEARCH AREA =====*/
+
+.serach-area {
+    background-color: #c92f2f;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.serach-area .left-content h2 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.serach-area .left-content h5 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.serach-area .right-input {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+}
+
+.serach-area .right-input input {
+    border: none;
+    width: 87%;
+    padding: 18px 0 18px 15px;
+    font-size: 14px;
+    color: #636363;
+    font-family: open-sans-font;
+}
+
+.serach-area .right-input a {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-decoration: none;
+    padding: 11px 35px;
+    background-color: #c92f2f;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.serach-area .right-input a:hover {
+    background-color: #232323;
+}
+/*===== SEARCH AREA =====*/
+
+/*===== FOOTER AREA =====*/
+.footer-area {
+    background-color: #1d0b0b;
+    padding-top: 65px;
+    padding-bottom: 70px;
+}
+
+.footer-area .footer-heading {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.footer-area .culumn-1 p {
+    padding-top: 40px;
+    color: #c2c2c2;
+}
+
+.footer-area .culumn-2 .row > .col-50 {
+    margin-left: 0;
+}
+
+.footer-area .culumn-2 a {
+    text-decoration: none;
+    color: #959595;
+    font-weight: 600;
+    padding: 5px 0;
+    display: block;
+    transition: 0.3s;
+}
+
+.footer-area .culumn-2 a:hover {
+    color: #c92f2f;
+    padding-left: 5px;
+}
+
+.footer-area .culumn-2 a i {
+    padding-right: 4px;
+    font-size: 11px;
+}
+
+.footer-area .culumn-3,
+.culumn-4 a,
+span {
+    display: block;
+}
+
+.footer-area .culumn-3 a {
+    color: #c2c2c2;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.footer-area .culumn-3 a:hover {
+    color: #c92f2f;
+}
+
+.footer-area .culumn-3 span {
+    padding-bottom: 25px;
+}
+
+.footer-area .culumn-3 span i {
+    color: #c92f2f;
+}
+
+.footer-area .culumn-4 a,
+span {
+    text-decoration: none;
+    color: #959595;
+    font-weight: 600;
+    padding: 5px 0;
+    display: block;
+    transition: 0.2s;
+    transition: 0.2s;
+}
+
+.footer-area .culumn-4 a:hover {
+    color: #c92f2f;
+}
+
+.footer-area .culumn-4 span i {
+    padding-right: 5px;
+    color: #c92f2f;
+}
+
+.footer-area .culumn-4 a i {
+    padding-right: 5px;
+    color: #c92f2f;
+}
+/*===== FOOTER AREA =====*/
+
+/*===== SUB FOOTER AREA =====*/
+
+.sub-footer {
+    background-color: #120606;
+    padding: 12px 0;
+}
+
+.sub-footer p {
+    color: #c2c2c2;
+}
+
+.sub-footer .footer-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sub-footer .footer-icon a {
+    color: #959595;
+    padding: 0 14px;
+    transition: 0.2s;
+}
+
+.sub-footer .footer-icon a:hover {
+    color: #c92f2f;
+}
+/*===== SUB FOOTER AREA =====*/

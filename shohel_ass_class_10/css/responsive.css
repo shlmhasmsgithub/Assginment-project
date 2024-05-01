@@ -1,0 +1,143 @@
+@media screen and (max-width: 767px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .row > div {
+        width: 100%;
+    }
+
+    .header-area .header-left {
+        text-align: center;
+    }
+
+    .header-area .header-left span,
+    .header-area .header-right a {
+        display: block;
+        text-align: center;
+        border-right: none;
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    .header-area .header-right {
+        justify-content: center;
+        display: block;
+    }
+
+    .navbar-area {
+        display: none;
+    }
+
+    .about-area {
+        padding: 50px 0;
+    }
+
+    .about-area .about-head-content h2 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .overlay-area {
+        margin-bottom: 45px;
+    }
+
+    .overlay-area .inner-section h2 {
+        font-size: 30px;
+        line-height: 42px;
+        padding: 0 0px;
+        margin-bottom: 40px;
+    }
+
+    .sermons-area .sermons-heading h2 {
+        font-size: 30px;
+    }
+
+    .upcoming-area {
+        margin-bottom: 60px;
+        margin-top: 40px;
+    }
+
+    .upcoming-area .inner-upcoming h2 {
+        font-size: 28px;
+    }
+
+    .gellary-area .single-gellary {
+        width: 100%;
+    }
+
+    .gellary-area {
+        margin-bottom: 40px;
+    }
+
+    .pagination-bar {
+        margin-bottom: 60px;
+    }
+
+    .news-area .news-heading h2 {
+        font-size: 30px;
+    }
+
+    .serach-area .left-content h2 {
+        font-size: 26px;
+    }
+
+    .news-area {
+        margin-bottom: 30px;
+    }
+
+    .news-area .single-news-content p {
+        margin-bottom: 25px;
+    }
+
+    .serach-area .right-input {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .serach-area .right-input input {
+        width: 100%;
+        padding: 16px 0 16px 10px;
+    }
+
+    .serach-area .right-input a {
+        padding: 9px 25px;
+    }
+
+    .serach-area .left-content h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .footer-area .culumn-1,
+    .footer-area .culumn-2,
+    .footer-area .culumn-3,
+    .footer-area .culumn-4 {
+        text-align: center;
+    }
+
+    .footer-area {
+        background-color: #1d0b0b;
+        padding-top: 55px;
+        padding-bottom: 50px;
+    }
+
+    .footer-area .footer-heading {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .footer-area .culumn-3 span {
+        padding-bottom: 16px;
+    }
+
+    .sub-footer .footer-icon {
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+
+    .sub-footer .row > .col-80 {
+        text-align: center;
+    }
+}
